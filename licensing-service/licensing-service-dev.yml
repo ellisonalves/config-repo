@@ -11,12 +11,6 @@ spring:
         ddl-auto: "create-drop"
 
   datasource:
-    platform: "postgres"
     url: "jdbc:postgresql://localhost:5432/ostock_dev"
     username: "postgres"
-    password: "postgres"
-    testWhileIdle: "true"
-    validationQuery: "SELECT 1"
-
-  database:
-    driverClassName: "org.postgresql.Driver"
+    password: "{cipher} 7412815dff88903483840f8699082c76e54fb7a9fe352f342b6cb3e172783e19"
