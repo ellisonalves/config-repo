@@ -1,0 +1,22 @@
+tracer.property: "I AM THE Dev"
+
+spring:
+  jpa:
+    database: "H2"
+    show-sql: "true"
+    generate-ddl: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.H2Dialect"
+        ddl-auto: "create-drop"
+
+  datasource:
+    platform: "postgres"
+    url: "jdbc:postgresql://localhost:5432/ostock_dev"
+    username: "postgres"
+    password: "postgres"
+    testWhileIdle: "true"
+    validationQuery: "SELECT 1"
+
+  database:
+    driverClassName: "org.postgresql.Driver"

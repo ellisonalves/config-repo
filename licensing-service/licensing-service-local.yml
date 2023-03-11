@@ -1,0 +1,14 @@
+tracer.property: "I AM THE LOCAL"
+
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+      dialect: org.hibernate.dialect.H2Dialect
+
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
