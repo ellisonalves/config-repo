@@ -1,16 +1,14 @@
-tracer.property: "I AM THE Dev"
+tracer.property: "I AM THE LOCAL"
 
 spring:
   jpa:
-    database: "H2"
-    show-sql: "true"
-    generate-ddl: "true"
-    properties:
-      hibernate:
-        dialect: "org.hibernate.dialect.H2Dialect"
-        ddl-auto: "create-drop"
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+      dialect: org.hibernate.dialect.H2Dialect
 
   datasource:
-    url: "jdbc:postgresql://localhost:5432/ostock_dev"
-    username: "postgres"
-    password: "{cipher} 7412815dff88903483840f8699082c76e54fb7a9fe352f342b6cb3e172783e19"
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: "{cipher} 7f355f62cae92ccbbf7498dc1e96a061b9dc6b79c333f3097798c656f0e496c3"
